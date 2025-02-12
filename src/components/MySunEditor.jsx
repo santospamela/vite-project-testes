@@ -7,6 +7,7 @@ export function MySunEditor() {
 
   return (
     <div>
+      <p>SunEditor</p>
       <SunEditor
         setContents={content}
         onChange={setContent}
@@ -20,6 +21,12 @@ export function MySunEditor() {
             ['codeView'],
             ['preview', 'print'],
           ],
+          setDefaultStyle: '',
+          attributesWhitelist: {
+            table: 'cellspacing cellpadding',
+            tr: '',
+            td: ''
+          }
         }}
       />
     </div>
