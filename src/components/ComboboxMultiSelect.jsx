@@ -60,14 +60,23 @@ export function ComboboxMultiSelect() {
               <ComboboxOption
                 key={person.id}
                 value={person}
+                data-selected={selectedPerson.some(
+                  (item) => item.id === person.id
+                )}
                 className="group flex cursor-pointer items-center gap-2 rounded-lg px-3 py-1.5 select-none data-focus:bg-white/10"
               >
                 <CheckIcon
                   className={clsx(
-                    "h-5 w-5 text-transparent group-data-selected:text-green-500 group-data-selected:opacity-100 group-data-selected:visible"
+                    "h-5 w-5 group-data-selected:text-green-500 group-data-selected:opacity-100 group-data-selected:visible"
                   )}
                 />
-                <div className="text-sm/6 text-black">{person.name}</div>
+                <div
+                  className={clsx(
+                    "text-sm text-black group-data-selected:text-green-500"
+                  )}
+                >
+                  {person.name}
+                </div>
               </ComboboxOption>
             ))}
           </ComboboxOptions>
