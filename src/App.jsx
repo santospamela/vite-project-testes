@@ -8,7 +8,7 @@ import { MySunEditor } from "./components/MySunEditor";
 
 export function App() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+    <div className="bg-black flex flex-col gap-6 w-full">
       <ComboboxMultiSelect />
       <NewCombobox />
       <MySunEditor />
