@@ -5,15 +5,17 @@ import { NewCombobox } from "./components/NewCombobox";
 import { MyJoditEditor } from "./components/MyJoditEditor";
 import { MyQuillEditor } from "./components/MyQuillEditor";
 import { MySunEditor } from "./components/MySunEditor";
+import { TutorialInAppReact } from "./components/TutorialInAppReact";
 
 export function App() {
   return (
-    <div className="bg-black flex flex-col gap-6 w-full">
-      <ComboboxMultiSelect />
-      <NewCombobox />
-      <MySunEditor />
-      <MyJoditEditor />
-      <MyQuillEditor />
+    <div className="bg-black flex flex-col gap-6 w-full h-dvh">
+      {/* <ComboboxMultiSelect /> */}
+      {/* <NewCombobox /> */}
+      {/* <MySunEditor /> */}
+      {/* <MyJoditEditor /> */}
+      {/* <MyQuillEditor /> */}
+      <TutorialInAppReact />
     </div>
   );
 }
