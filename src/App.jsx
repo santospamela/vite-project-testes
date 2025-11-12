@@ -7,6 +7,7 @@ import { MyQuillEditor } from "./components/MyQuillEditor";
 import { MySunEditor } from "./components/MySunEditor";
 import { TutorialInAppReact } from "./components/TutorialInAppReact";
 import { TutorialJoyRide } from "./components/TutorialJoyRide";
+import { TutorialDriver } from "./components/TutorialDriver";
 
 export function App() {
   return (
@@ -17,7 +18,8 @@ export function App() {
       {/* <MyJoditEditor /> */}
       {/* <MyQuillEditor /> */}
       {/* <TutorialInAppReact /> */}
-      <TutorialJoyRide />
+      {/* <TutorialJoyRide /> */}
+      <TutorialDriver />
     </div>
   );
 }
